@@ -41,7 +41,7 @@ p {
   margin: 0px;
 }
 
-.image {
+img {
   display: block;
 }
 
@@ -68,11 +68,6 @@ p {
   color: var(--light-mode-cloud);
 }
 
-header {
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
 /* BUTTON */
 
 .btn {
@@ -87,6 +82,8 @@ header {
   padding: 16px 32px;
   border-radius: 4px;
   min-width: 169px;
+  height: 56px;
+  border: none;
 
   background-color: var(--primary-brand);
   color: var(--white-color);
@@ -113,6 +110,7 @@ header {
 .filter-btn:focus {
   background-color: var(--cta-color);
   color: var(--white-color);
+  border: 1px solid transparent;
 }
 
 /* MAIN NAVIGATION */
@@ -122,6 +120,7 @@ header {
 .page-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo-nav {
@@ -139,12 +138,22 @@ header {
 }
 .main-nav-link {
   color: var(--title-bg-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: inline-block;
+}
+
+.logo-nav .logo {
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .main-nav-link:hover,
 .main-nav-link:focus {
   color: var(--cta-color);
 }
+
 .address {
   font-style: normal;
 }
@@ -178,7 +187,7 @@ header {
 .hero-title {
   margin-top: 0;
   margin-bottom: 48px;
-  width: 496px;
+  max-width: 496px;
 
   font-weight: 700;
   font-size: 56px;
@@ -224,6 +233,7 @@ header {
   display: flex;
 }
 .advant-list-item {
+  flex-basis: calc((100% - 72px) / 4);
   margin-right: 24px;
 }
 .advant-list-item:nth-child(4n + 4) {
@@ -267,6 +277,7 @@ header {
   padding: 32px 16px;
   text-align: center;
   background-color: var(--white-color);
+  border-radius: 0px 0px 4px 4px;
 }
 
 /* FOOTER */
@@ -277,8 +288,12 @@ header {
   padding-bottom: 100px;
 }
 .logo-slogan {
-  margin-top: 16px;
   max-width: 264px;
+}
+
+.logo-footer {
+  margin-bottom: 16px;
+  display: inline-block;
 }
 
 /* PORTFOLIO - SECTION */
@@ -299,23 +314,24 @@ header {
 }
 
 .project-list-item {
+  flex-basis: calc((100% - 48px) / 3);
   margin-right: 24px;
+  margin-bottom: 48px;
 }
-.project-list-item:nth-child(3n + 3) {
+
+.project-list-item:nth-child(3n) {
   margin-right: 0px;
 }
+.project-list-item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+
 .portfolio-text {
   color: var(--main-text-color);
 }
 
 .card {
-  padding-top: 32px;
-  padding-left: 16px;
-  padding-bottom: 32px;
+  padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: transparent;
-  margin-bottom: 48px;
-}
-.card:nth-last-child(-n + 3) {
-  margin-bottom: 0px;
 }
