@@ -95,7 +95,7 @@ img {
 
 .filter-btn {
   padding: 12px 24px;
-  margin-right: 24px;
+
   border: 1px solid #e7e9fc;
   border-radius: 4px;
 
@@ -103,9 +103,6 @@ img {
   color: var(--primary-brand);
 }
 
-.filter-btn:not(:last-child) {
-  margin-right: 0px;
-}
 .filter-btn:hover,
 .filter-btn:focus {
   background-color: var(--cta-color);
@@ -125,6 +122,7 @@ img {
 
 .logo-nav {
   display: flex;
+  align-items: center;
 }
 .main-nav {
   display: flex;
@@ -268,6 +266,7 @@ img {
 }
 .worker {
   margin-right: 24px;
+  border-radius: 0px 0px 4px 4px;
 }
 .worker:nth-child(4n + 4) {
   margin-right: 0;
@@ -277,7 +276,6 @@ img {
   padding: 32px 16px;
   text-align: center;
   background-color: var(--white-color);
-  border-radius: 0px 0px 4px 4px;
 }
 
 /* FOOTER */
@@ -307,6 +305,10 @@ img {
   display: flex;
   justify-content: center;
   margin-bottom: 72px;
+}
+
+.filter-btn-item:not(:last-child) {
+  margin-right: 24px;
 }
 .project-list {
   display: flex;
