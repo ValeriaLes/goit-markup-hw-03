@@ -116,7 +116,9 @@ header {
 }
 
 /* MAIN NAVIGATION */
-
+.header-border {
+  border-bottom: 1px solid #e7e9fc;
+}
 .page-header {
   display: flex;
   justify-content: space-between;
